@@ -392,7 +392,10 @@ main { position: relative; z-index: 1; }
   gap: 1.25rem;
 }
 
+/* data-project attribute marks cards that will become click-to-modal — cursor ready */
 .featured-card { display: flex; flex-direction: column; gap: 0.9rem; }
+[data-project] { cursor: default; }
+[data-project]:hover { border-color: var(--accent-magenta); }
 
 .featured-card-header {
   display: flex;
