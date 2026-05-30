@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stephen Minemann — Analytics Engineer. Snowflake · SQL · Python · Data Modeling · Operational Metrics." />
+  <title>Stephen Minemann · Analytics Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">sm<span class="accent-magenta">.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about"      data-i18n="nav.about">about</a></li>
+        <li><a href="#featured"   data-i18n="nav.work">work</a></li>
+        <li><a href="#skills"     data-i18n="nav.skills">skills</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">experience</a></li>
+        <li><a href="#education"  data-i18n="nav.education">education</a></li>
+        <li><a href="#contact"    data-i18n="nav.contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="hero" class="section-hero">
+      <div class="hero-content">
+        <div class="hero-identity">
+          <h1 class="hero-name">Stephen Minemann</h1>
+          <p class="hero-title">Analytics Engineer</p>
+          <p class="hero-tagline">Snowflake + SQL&nbsp;·&nbsp;Python/pandas&nbsp;·&nbsp;Data Modeling&nbsp;·&nbsp;Operational Metrics</p>
+        </div>
+        <div class="terminal" role="region" aria-label="Interactive terminal introduction">
+          <div class="terminal-titlebar" aria-hidden="true">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">stephen@portfolio: ~</span>
+          </div>
+          <div class="terminal-body">
+            <div id="terminal-output"></div>
+          </div>
+        </div>
+      </div>
+      <a href="#impact" class="scroll-hint" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ── IMPACT ── -->
+    <section id="impact" class="section section-impact">
+      <div class="section-inner">
+        <div class="impact-grid">
+
+          <div class="glass-card impact-card fade-in">
+            <div class="impact-numbers">
+              <span class="impact-num accent-magenta">90M</span>
+              <span class="impact-arrow">→</span>
+              <span class="impact-num accent-cyan">4M</span>
+            </div>
+            <p class="impact-desc">customer records analyzed → high-probability plan-migration candidates identified</p>
+          </div>
+
+          <div class="glass-card impact-card fade-in">
+            <div class="impact-numbers">
+              <span class="impact-num accent-magenta">17%</span>
+            </div>
+            <p class="impact-desc">Cost-Per-Site reduction across 6,000+ cell sites · <span class="accent-cyan">$180 → $150</span></p>
+          </div>
+
+          <div class="glass-card impact-card fade-in">
+            <div class="impact-label accent-magenta">FIRST</div>
+            <p class="impact-desc">repeatable Nokia outage analytics dataset for T-Mobile's Radio Replacement program · productized into a reusable Snowflake aggregation</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.about">about</span><span class="accent-magenta">.</span></h2>
+        <div class="glass-card about-card">
+          <!-- TODO: Stephen — add /assets/stephen.jpg and uncomment the img below -->
+          <!-- <img src="assets/stephen.jpg" alt="Stephen Minemann" class="about-photo" loading="lazy" /> -->
+          <p>Most data engineers have never touched the infrastructure they're querying. I have. Ten years at T-Mobile — starting in retail, moving through Network Operations, an SRE internship, and now as an Associate Systems Architect Engineer — gave me something most analytics work is missing: firsthand knowledge of how the systems actually behave before the data reaches a table.</p>
+          <p>That grounding shapes how I build. When I'm writing a Snowflake SQL model or transforming alarm extracts in pandas, I already know what an edge case looks like in the field. I built T-Mobile's first repeatable outage analytics dataset for the Nokia Radio Replacement program because no method existed to connect project schedules with national alarm data — and I knew exactly what the raw signals meant. I defined the downtime logic, parameterized it by site, market, and time window, and productized it into a reusable aggregation table once cross-market demand grew. The same pattern repeated: a CPS financial model for 6,000+ cell sites, a compliance reconciliation workflow across three Snowflake sources, a plan-migration candidate dataset surfaced from 90M customer records.</p>
+          <p>The thread is always the same: turning messy operational questions into trusted, reusable datasets and self-service analytics products. That's Analytics Engineering — and it's where I'm headed. I'm also a strong fit for Data Engineering and Business Analytics roles where operational domain depth matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURED ANALYTICS PRODUCTS ── -->
+    <section id="featured" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.featured">featured analytics products</span><span class="accent-magenta">.</span></h2>
+        <p class="section-sub">// work built at T-Mobile</p>
+        <div class="featured-grid">
+
+          <!-- a) Nokia Radio Replacement -->
+          <div class="glass-card featured-card fade-in">
+            <div class="featured-card-header">
+              <h3 class="featured-title">Nokia Radio Replacement Outage Analytics</h3>
+              <span class="badge badge-internal" data-i18n="badge.internal">internal</span>
+            </div>
+            <div class="stack-pills">
+              <span class="stack-pill">Snowflake SQL</span>
+              <span class="stack-pill">Python/pandas</span>
+              <span class="stack-pill">Power BI</span>
+              <span class="stack-pill">SharePoint</span>
+            </div>
+            <p class="featured-desc">Built the first repeatable outage-time dataset for the Nokia Radio Replacement program after a director-backed PMO request revealed no method existed to connect project schedules with national alarm data. Translated Nokia schedules, site lists, and maintenance windows into Snowflake SQL parameters to isolate qualifying alarms by site, project, market, and time window. Defined downtime logic and transformed raw alarm extracts in pandas into filterable CSV/Power BI outputs distributed through SharePoint for PM validation and leadership review. Productized into a reusable Snowflake aggregation table once cross-market demand grew.</p>
+            <p class="sample-note">// internal project · code and values have been sanitized and made ambiguous</p>
+          </div>
+
+          <!-- b) Cell Site Battery Monitoring Tool (PUBLIC) -->
+          <div class="glass-card featured-card fade-in">
+            <div class="featured-card-header">
+              <h3 class="featured-title">Cell Site Battery Monitoring Tool</h3>
+              <span class="badge badge-public" data-i18n="badge.public">public</span>
+            </div>
+            <div class="stack-pills">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">REST APIs</span>
+              <span class="stack-pill">pandas</span>
+              <span class="stack-pill">JSON</span>
+            </div>
+            <p class="featured-desc">Production-grade Python CLI that reads CSV/XLSX site lists, authenticates to power-cabinet web interfaces, collects battery state-of-charge and remaining runtime, and exports outage triage reports sorted lowest battery to highest. Env-based credentials, timeout controls, HTTPS→HTTP fallback, masked IP logging, debug snapshots, and timestamped outputs — built to run safely during disaster recovery.</p>
+            <div class="featured-links">
+              <a href="https://github.com/cheddaburger/power_cabinet_tool" class="featured-link" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View repo
+              </a>
+            </div>
+          </div>
+
+          <!-- c) Enterprise Data Integrity & Compliance (links to data-integrity-triage) -->
+          <div class="glass-card featured-card fade-in">
+            <div class="featured-card-header">
+              <h3 class="featured-title">Enterprise Data Integrity &amp; Compliance Dataset</h3>
+              <span class="badge badge-internal" data-i18n="badge.internal">internal</span>
+            </div>
+            <div class="stack-pills">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">SQL</span>
+              <span class="stack-pill">Snowflake</span>
+              <span class="stack-pill">pandas</span>
+              <span class="stack-pill">Jupyter</span>
+            </div>
+            <p class="featured-desc">Repeatable cleanup workflow for site-compliance data: reconciled 3,425 missing-site records and 7,046 MWR compliance rows across Snowflake source exports, field assignment files, and site metadata. Standardized raw compliance values into pass/fail/remediation buckets and generated owner-ready exception queues. Identified 1,013 one-field correction candidates packaged as correction-ready outputs.</p>
+            <p class="sample-note">// internal project · code and values have been sanitized and made ambiguous</p>
+            <div class="featured-links">
+              <a href="https://github.com/cheddaburger/data-integrity-triage" class="featured-link" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View sanitized sample
+              </a>
+            </div>
+          </div>
+
+          <!-- d) Cost Per Site Performance Data Model -->
+          <div class="glass-card featured-card fade-in">
+            <div class="featured-card-header">
+              <h3 class="featured-title">Cost Per Site Performance Data Model</h3>
+              <span class="badge badge-internal" data-i18n="badge.internal">internal</span>
+            </div>
+            <div class="stack-pills">
+              <span class="stack-pill">Snowflake SQL</span>
+              <span class="stack-pill">Power BI</span>
+              <span class="stack-pill">Operational Finance</span>
+            </div>
+            <p class="featured-desc">Site-level Cost-Per-Site model for tower crew support and material spend across 6,000+ cell sites — gave leadership a repeatable metric instead of one-off cost pulls. Normalized expense categories, surfaced outlier sites, trend views, and priority filters. Helped reduce average CPS from ~$180 to ~$150, beating the $160 target.</p>
+            <p class="sample-note">// internal project · code and values have been sanitized and made ambiguous</p>
+          </div>
+
+          <!-- e) ML Site / Premise Matching -->
+          <div class="glass-card featured-card fade-in">
+            <div class="featured-card-header">
+              <h3 class="featured-title">ML Site / Premise Matching Data Product</h3>
+              <span class="badge badge-internal" data-i18n="badge.internal">internal</span>
+            </div>
+            <div class="stack-pills">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">pandas</span>
+              <span class="stack-pill">NumPy</span>
+              <span class="stack-pill">scikit-learn</span>
+              <span class="stack-pill">SQL</span>
+              <span class="stack-pill">Geospatial</span>
+            </div>
+            <p class="featured-desc">Matching features combining normalized address tokens, geospatial distance, fuzzy similarity, and candidate ranking to link cell-site inventory to premise IDs. Designed a validation and exception-tracking schema for match status, review outcomes, metadata gaps, and audit history.</p>
+            <p class="sample-note">// internal project · code and values have been sanitized and made ambiguous</p>
+            <div class="featured-links">
+              <a href="https://github.com/cheddaburger/address-matching-ml" class="featured-link" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View sanitized sample
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ALL REPOS ── -->
+    <section id="repos" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.repos">all repos</span><span class="accent-magenta">.</span></h2>
+        <p class="section-sub">// public · non-fork · via GitHub API</p>
+        <div id="repos-grid" class="repos-grid">
+          <div class="loading-state" aria-live="polite" aria-label="Loading repositories">
+            <span class="spinner"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.skills">skills</span><span class="accent-magenta">.</span></h2>
+        <div class="skills-grid">
+
+          <div class="glass-card skill-group fade-in">
+            <h3 class="skill-group-title" data-i18n="skills.col1">Analytics Engineering</h3>
+            <ul class="skill-list" role="list">
+              <li>Data Modeling</li>
+              <li>Metric Definitions</li>
+              <li>ELT / ETL</li>
+              <li>CTEs &amp; Window Functions</li>
+              <li>Data Marts</li>
+              <li>Reusable Aggregation Tables</li>
+              <li>Self-Service Datasets</li>
+              <li>Reconciliation &amp; Validation</li>
+            </ul>
+          </div>
+
+          <div class="glass-card skill-group fade-in">
+            <h3 class="skill-group-title" data-i18n="skills.col2">Data Platforms &amp; SQL</h3>
+            <ul class="skill-list" role="list">
+              <li>Snowflake</li>
+              <li>SQL</li>
+              <li>Power BI</li>
+              <li>PostgreSQL</li>
+              <li>SQL Server</li>
+              <li>Alteryx</li>
+              <li>SharePoint</li>
+              <li>dbt <span class="exposure-pill" data-i18n="label.exposure">exposure</span></li>
+              <li>Airflow <span class="exposure-pill" data-i18n="label.exposure">exposure</span></li>
+            </ul>
+          </div>
+
+          <div class="glass-card skill-group fade-in">
+            <h3 class="skill-group-title" data-i18n="skills.col3">Python &amp; Tooling</h3>
+            <ul class="skill-list" role="list">
+              <li>Python</li>
+              <li>pandas</li>
+              <li>NumPy</li>
+              <li>Jupyter</li>
+              <li>scikit-learn</li>
+              <li>REST APIs</li>
+              <li>Postman</li>
+              <li>Git / GitHub / GitLab</li>
+              <li>JSON / XML / YAML</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.experience">experience</span><span class="accent-magenta">.</span></h2>
+        <div class="timeline">
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-role-block">
+                  <h3 class="timeline-role">Associate Systems Architect Engineer</h3>
+                  <span class="timeline-company">T-Mobile</span>
+                </div>
+                <span class="timeline-date">Sep 2025&nbsp;–&nbsp;<span data-i18n="label.present">present</span></span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Build Snowflake SQL and Python workflows across enterprise customer and network datasets; define source logic, metric rules, QA checks, and reusable outputs that inform operational strategy and long-term investment decisions.</li>
+                <li>Analyzed ~90M customer records and narrowed targeting to ~4M high-probability plan-migration candidates using behavioral and usage segmentation, balancing ARPU upside with churn and customer-experience considerations.</li>
+                <li>Partnered with a Senior Data Scientist on an FCC speed-forecasting prototype; profiled site-performance data for completeness, temporal coverage, sampling constraints, and model readiness before recommending next-step data improvements.</li>
+                <li>Use ChatGPT, Claude, and Cursor to accelerate SQL/Python scaffolding, refactoring, debugging, and documentation — independently validating outputs against real data and source-system behavior.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-role-block">
+                  <h3 class="timeline-role">Network Operations Engineer</h3>
+                  <span class="timeline-company">T-Mobile</span>
+                </div>
+                <span class="timeline-date">Oct 2021&nbsp;–&nbsp;Sep 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Built Python and SQL telemetry analytics and metadata validation workflows across 6,000+ cell sites to expose recurring degradation patterns, missing data, compliance gaps, cost variance, and reliability risks.</li>
+                <li>Designed the Cost-Per-Site data model and reporting workflow for crew and material spend; reduced average CPS from ~$180 to ~$150, beating the $160 target and giving leaders site-level outlier visibility.</li>
+                <li>Owned Tier II incident analytics, translating recurring alarms into detection logic, exception categories, mitigation playbooks, and preventive remediation while supporting 99.90%+ availability.</li>
+                <li>Built a Python battery-monitoring extract that ingested site lists, queried power-cabinet web interfaces, parsed battery/runtime data, and produced outage-priority outputs sorted by lowest remaining backup power (now open-sourced as <a href="https://github.com/cheddaburger/power_cabinet_tool" target="_blank" rel="noopener noreferrer" class="timeline-inline-link">cheddaburger/power_cabinet_tool</a>).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-role-block">
+                  <h3 class="timeline-role">System Reliability Engineer Intern</h3>
+                  <span class="timeline-company">T-Mobile</span>
+                </div>
+                <span class="timeline-date">Jan 2024&nbsp;–&nbsp;May 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Collaborated with SRE and DevOps engineers on Docker, Kubernetes, Splunk, Grafana, microservices troubleshooting, observability, and command-line debugging of containers and services.</li>
+                <li>Built hands-on frontend work in a stretch assignment using JavaScript, Node.js, Vue, Webpack, and HTML/CSS — picked up the modern frontend toolchain end-to-end.</li>
+                <li>Used GitHub and GitLab for collaborative version control and CI workflows in production-style engineering assignments.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-item-dim fade-in">
+            <div class="timeline-marker timeline-marker-dim"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-role-block">
+                  <h3 class="timeline-role">Mobile Expert / Signature Mobile Expert</h3>
+                  <span class="timeline-company">T-Mobile</span>
+                </div>
+                <span class="timeline-date">Oct 2015&nbsp;–&nbsp;Oct 2021</span>
+              </div>
+              <p class="timeline-brief">The start of the arc.</p>
+              <ul class="timeline-bullets">
+                <li>Ranked #1 in sales performance and maintained 90%+ NPS across a 6-year tenure.</li>
+                <li>Led device and service troubleshooting; trained peers on legacy Sprint systems during the post-merger transition.</li>
+                <li>Documented repeatable customer-resolution workflows that scaled across the store team.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION & LEARNING ── -->
+    <section id="education" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.education">education &amp; learning</span><span class="accent-magenta">.</span></h2>
+        <div class="education-grid">
+
+          <div class="glass-card education-card fade-in">
+            <div class="edu-icon" aria-hidden="true">🎓</div>
+            <h3 class="edu-degree">B.S. Computer Science</h3>
+            <p class="edu-school">Colorado Technical University</p>
+            <p class="edu-meta">2019–2022 · Cum Laude</p>
+          </div>
+
+          <div class="glass-card education-card fade-in">
+            <div class="edu-icon" aria-hidden="true">❄️</div>
+            <h3 class="edu-degree">Snowflake "Zero to Agents" Workshop</h3>
+            <p class="edu-meta">2025</p>
+          </div>
+
+          <div class="glass-card education-card fade-in">
+            <div class="edu-icon" aria-hidden="true">☁️</div>
+            <h3 class="edu-degree">AWS Certified Machine Learning – Specialty</h3>
+            <p class="edu-school">Amazon Web Services</p>
+            <p class="edu-meta in-progress">in progress</p>
+          </div>
+
+          <div class="glass-card education-card fade-in">
+            <div class="edu-icon" aria-hidden="true">🔧</div>
+            <h3 class="edu-degree">dbt Analytics Engineering Certification</h3>
+            <p class="edu-school">dbt Labs</p>
+            <p class="edu-meta in-progress">in progress</p>
+          </div>
+
+          <!-- TODO: Stephen — duplicate the card above for each additional cert you complete -->
+          <div class="glass-card education-card education-placeholder fade-in">
+            <p class="todo-text">// TODO: Stephen — add more certs here</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section fade-in">
+      <div class="section-inner contact-inner">
+        <h2 class="section-title"><span data-i18n="section.contact">contact</span><span class="accent-magenta">.</span></h2>
+        <p class="contact-tagline" data-i18n="contact.tagline">Let's build something worth measuring.</p>
+        <p class="location-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Bloomington, MN &nbsp;·&nbsp; Open to remote, hybrid, or on-site
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/cheddaburger" class="contact-btn glass-card" target="_blank" rel="noopener noreferrer">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/stephenminemann/" class="contact-btn glass-card" target="_blank" rel="noopener noreferrer">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:s.minemann@gmail.com" class="contact-btn glass-card">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            s.minemann@gmail.com
+          </a>
+        </div>
+        <p class="easter-egg-hint">bilingual? try typing <kbd>es</kbd></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with vanilla JS &amp; a healthy disrespect for frameworks &nbsp;·&nbsp; <a href="https://github.com/cheddaburger" target="_blank" rel="noopener noreferrer">@cheddaburger</a></p>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
