@@ -225,6 +225,22 @@ function initNav() {
 }
 
 /* ============================================================
+   THEME TOGGLE
+   ============================================================ */
+
+function initTheme() {
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next    = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+}
+
+/* ============================================================
    i18n EASTER EGG — type "es" / "en"
    ============================================================ */
 
@@ -333,6 +349,7 @@ function initI18n() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
+  initTheme();
   runTerminal();
   loadRepos();
   observeFadeIns(document.querySelectorAll('.fade-in'));
