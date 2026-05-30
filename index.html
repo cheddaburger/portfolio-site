@@ -112,9 +112,9 @@
         <div class="glass-card about-card">
           <!-- TODO: Stephen — add /assets/stephen.jpg and uncomment the img below -->
           <!-- <img src="assets/stephen.jpg" alt="Stephen Minemann" class="about-photo" loading="lazy" /> -->
-          <p>Most data engineers have never touched the infrastructure they're querying. I have. Ten years at T-Mobile — starting in retail, moving through Network Operations, an SRE internship, and now as an Associate Systems Architect Engineer — gave me something most analytics work is missing: firsthand knowledge of how the systems actually behave before the data reaches a table.</p>
-          <p>That grounding shapes how I build. When I'm writing a Snowflake SQL model or transforming alarm extracts in pandas, I already know what an edge case looks like in the field. I built T-Mobile's first repeatable outage analytics dataset for the Nokia Radio Replacement program because no method existed to connect project schedules with national alarm data — and I knew exactly what the raw signals meant. I defined the downtime logic, parameterized it by site, market, and time window, and productized it into a reusable aggregation table once cross-market demand grew. The same pattern repeated: a CPS financial model for 6,000+ cell sites, a compliance reconciliation workflow across three Snowflake sources, a plan-migration candidate dataset surfaced from 90M customer records.</p>
-          <p>The thread is always the same: turning messy operational questions into trusted, reusable datasets and self-service analytics products. That's Analytics Engineering — and it's where I'm headed. I'm also a strong fit for Data Engineering and Business Analytics roles where operational domain depth matters.</p>
+          <p>Most data engineers have never touched the infrastructure they're querying. I have. Ten years at T-Mobile, starting in retail, moving through Network Operations, an SRE internship, and now as an Associate Systems Architect Engineer, gave me something most analytics work is missing: firsthand knowledge of how the systems actually behave before the data reaches a table.</p>
+          <p>That grounding shapes how I build. When I'm writing a Snowflake SQL model or transforming alarm extracts in pandas, I already know what an edge case looks like in the field. I built T-Mobile's first repeatable outage analytics dataset for the Nokia Radio Replacement program because no method existed to connect project schedules with national alarm data. I knew exactly what the raw signals meant. I defined the downtime logic, parameterized it by site, market, and time window, and productized it into a reusable aggregation table once cross-market demand grew. The same pattern repeated across a CPS financial model for 6,000+ cell sites, a compliance reconciliation workflow across three Snowflake sources, and a plan-migration candidate dataset surfaced from 90M customer records.</p>
+          <p>The thread is always the same: turning messy operational questions into trusted, reusable datasets and self-service analytics products. That's Analytics Engineering, and that's where I'm headed. I'm also a strong fit for Data Engineering and Business Analytics roles where operational domain depth matters.</p>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
               <span class="stack-pill">pandas</span>
               <span class="stack-pill">JSON</span>
             </div>
-            <p class="featured-desc">Production-grade Python CLI that reads CSV/XLSX site lists, authenticates to power-cabinet web interfaces, collects battery state-of-charge and remaining runtime, and exports outage triage reports sorted lowest battery to highest. Env-based credentials, timeout controls, HTTPS→HTTP fallback, masked IP logging, debug snapshots, and timestamped outputs — built to run safely during disaster recovery.</p>
+            <p class="featured-desc">Production-grade Python CLI that reads CSV/XLSX site lists, authenticates to power-cabinet web interfaces, collects battery state-of-charge and remaining runtime, and exports outage triage reports sorted lowest battery to highest. Env-based credentials, timeout controls, HTTPS to HTTP fallback, masked IP logging, debug snapshots, and timestamped outputs. Built to run safely during disaster recovery.</p>
             <div class="featured-links">
               <a href="https://github.com/cheddaburger/power_cabinet_tool" class="featured-link" target="_blank" rel="noopener noreferrer">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -197,7 +197,7 @@
               <span class="stack-pill">Power BI</span>
               <span class="stack-pill">Operational Finance</span>
             </div>
-            <p class="featured-desc">Site-level Cost-Per-Site model for tower crew support and material spend across 6,000+ cell sites — gave leadership a repeatable metric instead of one-off cost pulls. Normalized expense categories, surfaced outlier sites, trend views, and priority filters. Helped reduce average CPS from ~$180 to ~$150, beating the $160 target.</p>
+            <p class="featured-desc">Site-level Cost-Per-Site model for tower crew support and material spend across 6,000+ cell sites. This gave leadership a repeatable metric instead of one-off cost pulls. Normalized expense categories, surfaced outlier sites, trend views, and priority filters. Helped reduce average CPS from ~$180 to ~$150, beating the $160 target.</p>
             <p class="sample-note">// internal project · code and values have been sanitized and made ambiguous</p>
           </div>
 
@@ -225,19 +225,6 @@
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ── ALL REPOS ── -->
-    <section id="repos" class="section fade-in">
-      <div class="section-inner">
-        <h2 class="section-title"><span data-i18n="section.repos">all repos</span><span class="accent-magenta">.</span></h2>
-        <p class="section-sub">// public · non-fork · via GitHub API</p>
-        <div id="repos-grid" class="repos-grid">
-          <div class="loading-state" aria-live="polite" aria-label="Loading repositories">
-            <span class="spinner"></span>
-          </div>
         </div>
       </div>
     </section>
@@ -316,7 +303,7 @@
                 <li>Build Snowflake SQL and Python workflows across enterprise customer and network datasets; define source logic, metric rules, QA checks, and reusable outputs that inform operational strategy and long-term investment decisions.</li>
                 <li>Analyzed ~90M customer records and narrowed targeting to ~4M high-probability plan-migration candidates using behavioral and usage segmentation, balancing ARPU upside with churn and customer-experience considerations.</li>
                 <li>Partnered with a Senior Data Scientist on an FCC speed-forecasting prototype; profiled site-performance data for completeness, temporal coverage, sampling constraints, and model readiness before recommending next-step data improvements.</li>
-                <li>Use ChatGPT, Claude, and Cursor to accelerate SQL/Python scaffolding, refactoring, debugging, and documentation — independently validating outputs against real data and source-system behavior.</li>
+                <li>Use ChatGPT, Claude, and Cursor to accelerate SQL/Python scaffolding, refactoring, debugging, and documentation. I independently validate all outputs against real data and source-system behavior.</li>
               </ul>
             </div>
           </div>
@@ -352,7 +339,7 @@
               </div>
               <ul class="timeline-bullets">
                 <li>Collaborated with SRE and DevOps engineers on Docker, Kubernetes, Splunk, Grafana, microservices troubleshooting, observability, and command-line debugging of containers and services.</li>
-                <li>Built hands-on frontend work in a stretch assignment using JavaScript, Node.js, Vue, Webpack, and HTML/CSS — picked up the modern frontend toolchain end-to-end.</li>
+                <li>Built hands-on frontend work in a stretch assignment using JavaScript, Node.js, Vue, Webpack, and HTML/CSS and picked up the modern frontend toolchain end-to-end.</li>
                 <li>Used GitHub and GitLab for collaborative version control and CI workflows in production-style engineering assignments.</li>
               </ul>
             </div>
@@ -412,11 +399,6 @@
             <h3 class="edu-degree">dbt Analytics Engineering Certification</h3>
             <p class="edu-school">dbt Labs</p>
             <p class="edu-meta in-progress">in progress</p>
-          </div>
-
-          <!-- TODO: Stephen — duplicate the card above for each additional cert you complete -->
-          <div class="glass-card education-card education-placeholder fade-in">
-            <p class="todo-text">// TODO: Stephen — add more certs here</p>
           </div>
 
         </div>

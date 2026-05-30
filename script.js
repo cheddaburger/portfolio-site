@@ -254,7 +254,6 @@ const TRANSLATIONS = {
     'nav.contact':      'contact',
     'section.about':    'about',
     'section.featured': 'featured analytics products',
-    'section.repos':    'all repos',
     'section.skills':   'skills',
     'section.experience': 'experience',
     'section.education': 'education & learning',
@@ -277,7 +276,6 @@ const TRANSLATIONS = {
     'nav.contact':      'contacto',
     'section.about':    'sobre mí',
     'section.featured': 'productos analíticos destacados',
-    'section.repos':    'todos los repos',
     'section.skills':   'habilidades',
     'section.experience': 'experiencia',
     'section.education': 'educación y aprendizaje',
@@ -351,7 +349,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initTheme();
   runTerminal();
-  loadRepos();
   observeFadeIns(document.querySelectorAll('.fade-in'));
   initI18n();
 });
