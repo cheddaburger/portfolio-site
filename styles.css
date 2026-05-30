@@ -2,20 +2,23 @@
    CUSTOM PROPERTIES — DARK MODE (default)
    ============================================================ */
 :root {
-  --bg:             #070d1b;
-  --bg-card:        rgba(10, 25, 65, 0.38);
-  --bg-card-hover:  rgba(10, 25, 65, 0.58);
-  --border:         rgba(0, 212, 170, 0.13);
-  --border-hover:   rgba(0, 212, 170, 0.3);
+  --bg:             #04090f;
+  --bg-card:        rgba(4, 18, 42, 0.55);
+  --bg-card-hover:  rgba(4, 18, 42, 0.75);
+  --border:         rgba(0, 217, 188, 0.14);
+  --border-hover:   rgba(0, 217, 188, 0.32);
 
-  --text-primary:   #deeeff;
-  --text-secondary: #7b9cb5;
-  --text-muted:     #3d5a72;
+  --text-primary:   #e0f0ff;
+  --text-secondary: #7ba8c4;
+  --text-muted:     #3a5870;
 
-  --accent-magenta:     #00d4aa;
-  --accent-cyan:        #00ff88;
-  --accent-magenta-dim: rgba(0, 212, 170, 0.12);
-  --accent-cyan-dim:    rgba(0, 255, 136, 0.1);
+  /* turquoise = primary accent */
+  --accent-magenta:     #00d9bc;
+  --accent-magenta-dim: rgba(0, 217, 188, 0.12);
+
+  /* neon green = secondary accent */
+  --accent-cyan:        #39ff14;
+  --accent-cyan-dim:    rgba(57, 255, 20, 0.1);
 
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -35,20 +38,21 @@
    CUSTOM PROPERTIES — LIGHT MODE
    ============================================================ */
 [data-theme="light"] {
-  --bg:             #eef5ff;
-  --bg-card:        rgba(255, 255, 255, 0.65);
-  --bg-card-hover:  rgba(255, 255, 255, 0.88);
-  --border:         rgba(0, 50, 120, 0.1);
-  --border-hover:   rgba(0, 50, 120, 0.22);
+  --bg:             #f0fffe;
+  --bg-card:        rgba(255, 255, 255, 0.75);
+  --bg-card-hover:  rgba(255, 255, 255, 0.95);
+  --border:         rgba(0, 110, 95, 0.15);
+  --border-hover:   rgba(0, 110, 95, 0.3);
 
-  --text-primary:   #07152e;
-  --text-secondary: #2a4a6b;
-  --text-muted:     #5a7a9a;
+  --text-primary:   #031a14;
+  --text-secondary: #1e5045;
+  --text-muted:     #4a7a6e;
 
-  --accent-magenta:     #007d6a;
-  --accent-cyan:        #1a8c00;
-  --accent-magenta-dim: rgba(0, 125, 106, 0.1);
-  --accent-cyan-dim:    rgba(26, 140, 0, 0.08);
+  --accent-magenta:     #007a6a;
+  --accent-magenta-dim: rgba(0, 122, 106, 0.1);
+
+  --accent-cyan:        #267300;
+  --accent-cyan-dim:    rgba(38, 115, 0, 0.08);
 }
 
 /* ============================================================
@@ -93,12 +97,12 @@ kbd  {
   pointer-events: none;
 }
 
-.blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.09; }
+.blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.11; }
 
-.blob-1 { width: 640px; height: 640px; background: #0d3875; top: -220px; left: -160px; animation: blob1 20s ease-in-out infinite; }
-.blob-2 { width: 520px; height: 520px; background: var(--accent-magenta); bottom: -200px; right: -120px; animation: blob2 24s ease-in-out infinite; }
-.blob-3 { width: 380px; height: 380px; background: var(--accent-cyan);    top: 45%; right: 25%; animation: blob3 16s ease-in-out infinite; }
-.blob-4 { width: 320px; height: 320px; background: #0a2d6e;               bottom: 25%; left: 15%; animation: blob4 22s ease-in-out infinite; }
+.blob-1 { width: 640px; height: 640px; background: #002d5a; top: -220px; left: -160px; animation: blob1 20s ease-in-out infinite; }
+.blob-2 { width: 520px; height: 520px; background: #00d9bc; bottom: -200px; right: -120px; animation: blob2 24s ease-in-out infinite; }
+.blob-3 { width: 380px; height: 380px; background: #39ff14; top: 45%; right: 25%; animation: blob3 16s ease-in-out infinite; opacity: 0.07; }
+.blob-4 { width: 320px; height: 320px; background: #003d70; bottom: 25%; left: 15%; animation: blob4 22s ease-in-out infinite; }
 
 @keyframes blob1 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(55px,75px) scale(1.08); } 66% { transform: translate(-35px,35px) scale(0.94); } }
 @keyframes blob2 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(-70px,-55px) scale(1.06); } 66% { transform: translate(45px,-25px) scale(1.12); } }
@@ -155,8 +159,9 @@ kbd  {
   flex-shrink: 0;
 }
 .theme-toggle:hover { color: var(--accent-magenta); border-color: var(--accent-magenta); }
-.theme-toggle svg { display: block; }
-.theme-toggle .icon-sun { display: none; }
+/* icon visibility — dark mode shows moon, light mode shows sun */
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun  { display: none; }
 [data-theme="light"] .theme-toggle .icon-moon { display: none; }
 [data-theme="light"] .theme-toggle .icon-sun  { display: block; }
 
@@ -251,7 +256,7 @@ main { position: relative; z-index: 1; }
   width: 100%;
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.6), 0 0 0 1px var(--border), 0 0 50px rgba(0,212,170,0.06);
+  box-shadow: 0 25px 70px rgba(0,0,0,0.7), 0 0 0 1px var(--border), 0 0 60px rgba(0,217,188,0.08);
   background: #0c0c14;
 }
 
@@ -600,7 +605,7 @@ main { position: relative; z-index: 1; }
   border-radius: 50%;
   background: var(--accent-magenta);
   border: 2px solid var(--bg);
-  box-shadow: 0 0 8px rgba(0, 212, 170, 0.5);
+  box-shadow: 0 0 8px rgba(0, 217, 188, 0.55);
   z-index: 1;
 }
 
@@ -792,37 +797,39 @@ footer a:hover { text-decoration: underline; }
    LIGHT MODE OVERRIDES
    ============================================================ */
 [data-theme="light"] #navbar.scrolled {
-  background: rgba(238, 245, 255, 0.92);
+  background: rgba(240, 255, 254, 0.92);
 }
 
-/* Keep terminal dark even in light mode — terminals are always dark */
+/* Terminal stays dark — terminals are always dark */
 [data-theme="light"] .terminal {
-  background: #0d1525;
-  box-shadow: 0 25px 70px rgba(0,40,100,0.18), 0 0 0 1px rgba(0,50,120,0.15);
+  background: #04090f;
+  box-shadow: 0 25px 70px rgba(0,80,70,0.2), 0 0 0 1px rgba(0,110,95,0.2);
 }
 [data-theme="light"] .terminal-titlebar {
-  border-bottom-color: rgba(255,255,255,0.08);
+  background: rgba(0, 217, 188, 0.05);
+  border-bottom-color: rgba(0, 217, 188, 0.12);
 }
 
-[data-theme="light"] .blob-1,
-[data-theme="light"] .blob-4 { background: #1a3a8f; opacity: 0.06; }
-[data-theme="light"] .blob-2 { background: #00b896; opacity: 0.08; }
-[data-theme="light"] .blob-3 { background: #00cc66; opacity: 0.07; }
-
-[data-theme="light"] .timeline::before {
-  background: linear-gradient(to bottom, var(--accent-magenta), var(--accent-cyan), transparent);
-}
+[data-theme="light"] .blob { opacity: 0.08; }
+[data-theme="light"] .blob-1 { background: #005a50; }
+[data-theme="light"] .blob-2 { background: #00d9bc; }
+[data-theme="light"] .blob-3 { background: #39ff14; }
+[data-theme="light"] .blob-4 { background: #006b5e; }
 
 [data-theme="light"] .nav-links {
-  background: rgba(238, 245, 255, 0.97);
+  background: rgba(240, 255, 254, 0.97);
 }
 
 [data-theme="light"] .education-placeholder {
-  border-color: rgba(0, 50, 120, 0.2);
+  border-color: rgba(0, 110, 95, 0.25);
 }
 
 [data-theme="light"] footer {
-  background: rgba(220, 235, 255, 0.5);
+  background: rgba(200, 245, 240, 0.5);
+}
+
+[data-theme="light"] .timeline-marker {
+  box-shadow: 0 0 8px rgba(0, 122, 106, 0.5);
 }
 
 /* ============================================================
@@ -848,7 +855,7 @@ footer a:hover { text-decoration: underline; }
     left: 0; right: 0;
     flex-direction: column;
     padding: 1.25rem 1.5rem;
-    background: rgba(7, 13, 27, 0.97);
+    background: rgba(4, 9, 15, 0.97);
     backdrop-filter: blur(var(--blur));
     border-bottom: 1px solid var(--border);
     gap: 1rem;
