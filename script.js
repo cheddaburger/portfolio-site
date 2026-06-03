@@ -16,7 +16,7 @@ const PROMPT_HTML =
 const COMMANDS = [
   {
     cmd: 'whoami',
-    output: '> Analytics Engineer · 10+ years @ T-Mobile · Bloomington, MN',
+    output: '> Analytics Engineer · 10+ years @ T-Mobile · Detroit, MI',
   },
   {
     cmd: "cat stack.json | jq '.core'",
