@@ -166,6 +166,7 @@ const TRANSLATIONS = {
   en: {
     'nav.about':        'about',
     'nav.work':         'work',
+    'nav.inprogress':   'in progress',
     'nav.sidequests':   'side quests',
     'nav.skills':       'skills',
     'nav.experience':   'experience',
@@ -173,6 +174,7 @@ const TRANSLATIONS = {
     'nav.contact':      'contact',
     'section.about':    'about',
     'section.featured':    'featured analytics products',
+    'section.inprogress':  '🚧 in progress',
     'section.sidequests':  '🧙 side quests',
     'section.skills':   'skills',
     'section.experience': 'experience',
@@ -190,6 +192,7 @@ const TRANSLATIONS = {
   es: {
     'nav.about':        'sobre mí',
     'nav.work':         'trabajo',
+    'nav.inprogress':   'en progreso',
     'nav.sidequests':   'misiones secundarias',
     'nav.skills':       'habilidades',
     'nav.experience':   'experiencia',
@@ -197,6 +200,7 @@ const TRANSLATIONS = {
     'nav.contact':      'contacto',
     'section.about':    'sobre mí',
     'section.featured':   'productos analíticos destacados',
+    'section.inprogress': '🚧 en progreso',
     'section.sidequests': '🧙 misiones secundarias',
     'section.skills':   'habilidades',
     'section.experience': 'experiencia',

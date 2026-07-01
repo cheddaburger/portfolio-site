@@ -42,8 +42,9 @@
       <a href="#hero" class="nav-logo">sm<span class="accent-magenta">.</span></a>
       <ul class="nav-links" id="nav-links" role="list">
         <li><a href="#about"      data-i18n="nav.about">about</a></li>
-        <li><a href="#featured"   data-i18n="nav.work">work</a></li>
-        <li><a href="#sidequests" data-i18n="nav.sidequests">side quests</a></li>
+        <li><a href="#featured"    data-i18n="nav.work">work</a></li>
+        <li><a href="#inprogress"  data-i18n="nav.inprogress">in progress</a></li>
+        <li><a href="#sidequests"  data-i18n="nav.sidequests">side quests</a></li>
         <li><a href="#skills"     data-i18n="nav.skills">skills</a></li>
         <li><a href="#experience" data-i18n="nav.experience">experience</a></li>
         <li><a href="#education"  data-i18n="nav.education">education</a></li>
@@ -243,6 +244,72 @@
             </div>
             <p class="featured-desc">Site-level Cost-Per-Site model for tower crew support and material spend across 6,000+ cell sites. This gave leadership a repeatable metric instead of one-off cost pulls. Normalized expense categories, surfaced outlier sites, trend views, and priority filters. Helped reduce average CPS from ~$180 to ~$150, beating the $160 target.</p>
             <p class="sample-note">// internal project · code and values have been sanitized and made ambiguous</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── IN PROGRESS ── -->
+    <section id="inprogress" class="section fade-in">
+      <div class="section-inner">
+        <h2 class="section-title"><span data-i18n="section.inprogress">🚧 in progress</span><span class="accent-magenta">.</span></h2>
+        <p class="section-sub">// currently building · methodology locked, execution in flight</p>
+        <div class="featured-grid">
+
+          <div class="glass-card featured-card inprogress-card fade-in" data-project="aging-ticket-pipeline">
+            <div class="featured-card-header">
+              <h3 class="featured-title">Aging Ticket Pipeline &amp; Compliance Alerting</h3>
+              <span class="badge badge-inprogress">in progress</span>
+            </div>
+            <div class="stack-pills">
+              <span class="stack-pill">Snowflake SQL</span>
+              <span class="stack-pill">Python/pandas</span>
+              <span class="stack-pill">Jupyter</span>
+              <span class="stack-pill">Power BI</span>
+              <span class="stack-pill">Email Automation</span>
+            </div>
+            <p class="featured-desc">Operational compliance pipeline that tracks tickets aging past 30 days across technician and engineer queues. Surfaces ticket owner, status, type/bucket, and weekly trend in a Snowflake view — giving leadership a live look at who is out of compliance and by how much.</p>
+
+            <div class="methodology">
+              <div class="method-step completed">
+                <span class="method-dot"></span>
+                <div class="method-content">
+                  <span class="method-label">Phase 1 — Prototype</span>
+                  <span class="method-detail">Sample dataset, schema design, aging logic validation</span>
+                </div>
+              </div>
+              <div class="method-step active">
+                <span class="method-dot"></span>
+                <div class="method-content">
+                  <span class="method-label">Phase 2 — Production Dataset</span>
+                  <span class="method-detail">Pull live ticket data, define source logic and QA checks</span>
+                </div>
+              </div>
+              <div class="method-step">
+                <span class="method-dot"></span>
+                <div class="method-content">
+                  <span class="method-label">Phase 3 — Snowflake View</span>
+                  <span class="method-detail">Reusable aggregation with owner, status, bucket, weekly trend</span>
+                </div>
+              </div>
+              <div class="method-step">
+                <span class="method-dot"></span>
+                <div class="method-content">
+                  <span class="method-label">Phase 4 — Notebook + Power BI</span>
+                  <span class="method-detail">Transformation layer and self-service reporting output</span>
+                </div>
+              </div>
+              <div class="method-step">
+                <span class="method-dot"></span>
+                <div class="method-content">
+                  <span class="method-label">Phase 5 — Compliance Alerts</span>
+                  <span class="method-detail">Automated email to managers when technicians exceed SLA threshold</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="sample-note">// internal project · code and values will be sanitized for public samples</p>
           </div>
 
         </div>
