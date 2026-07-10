@@ -153,7 +153,6 @@
               <span class="stack-pill">scikit-learn</span>
               <span class="stack-pill">HTML/CSS/JS</span>
               <span class="stack-pill">Jupyter</span>
-              <span class="stack-pill">ReportLab</span>
             </div>
             <p class="featured-desc">Automated pipeline that replaced a manual multi-hour weekly analyst workflow for tracking aging incident tickets (open > 30 days) across field ops teams. Ingests the weekly ticket export, classifies every ticket via a layered rule + TF-IDF fallback classifier (fully offline, no external model dependencies), infers actionability from blocker signals in ticket text, and rolls results up across region → area → market → technician. Tracks week-over-week change via an append-only snapshot so the impact of each weekly nudge is measurable over time. Delivers an interactive web dashboard with three views — days-open summary matrix, issue-theme breakdown, and a technician drilldown with a color heat scale — plus a one-click per-person email export with full ticket detail attached as a spreadsheet. All consumers read from a single structured JSON payload, decoupling the transform layer from the presentation so the delivery can move from static files to a live REST endpoint with no front-end rework.</p>
             <p class="sample-note">// internal project · actively in development</p>
