@@ -734,6 +734,7 @@ main { position: relative; z-index: 1; }
 }
 
 .timeline-role { font-family: var(--font-mono); font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+.timeline-role-qualifier { font-weight: 400; color: var(--text-muted); font-size: 0.85rem; }
 .timeline-company { font-size: 0.82rem; color: var(--accent-cyan); font-family: var(--font-mono); display: block; margin-top: 2px; }
 .timeline-date { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; }
 
@@ -773,6 +774,7 @@ main { position: relative; z-index: 1; }
 
 .edu-icon { font-size: 1.5rem; margin-bottom: 0.25rem; }
 .edu-degree { font-family: var(--font-mono); font-size: 0.9rem; font-weight: 700; color: var(--text-primary); line-height: 1.4; }
+.edu-concentration { font-weight: 400; color: var(--text-muted); font-size: 0.82rem; }
 .edu-school { font-size: 0.855rem; color: var(--text-secondary); }
 .edu-meta { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); }
 

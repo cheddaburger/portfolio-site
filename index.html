@@ -127,7 +127,7 @@
         <div class="glass-card about-card">
           <!-- TODO: Stephen — add /assets/stephen.jpg and uncomment the img below -->
           <!-- <img src="assets/stephen.jpg" alt="Stephen Minemann" class="about-photo" loading="lazy" /> -->
-          <p>Most data engineers have never touched the infrastructure they're querying. I have. Ten years at T-Mobile, starting in retail, moving through Network Operations, an SRE internship, and now as an Associate Systems Architect Engineer, gave me something most analytics work is missing: firsthand knowledge of how the systems actually behave before the data reaches a table.</p>
+          <p>Most data engineers have never touched the infrastructure they're querying. I have. Ten years at T-Mobile, starting in retail, moving through Network Operations, an SRE internship, an internal architect program, and my current role as a Wireless Systems Technician, gave me something most analytics work is missing: firsthand knowledge of how the systems actually behave before the data reaches a table.</p>
           <p>That grounding shapes how I build. When I'm writing a Snowflake SQL model or transforming alarm extracts in pandas, I already know what an edge case looks like in the field. I built T-Mobile's first repeatable outage analytics dataset for the Nokia Radio Replacement program because no method existed to connect project schedules with national alarm data. I knew exactly what the raw signals meant. I defined the downtime logic, parameterized it by site, market, and time window, and productized it into a reusable aggregation table once cross-market demand grew. The same pattern repeated across a CPS financial model for 6,000+ cell sites, a compliance reconciliation workflow across three Snowflake sources, and a plan-migration candidate dataset surfaced from 90M customer records.</p>
           <p>The thread is always the same: turning messy operational questions into trusted, reusable datasets and self-service analytics products. That's Analytics Engineering, and that's where I'm headed. I'm also a strong fit for Data Engineering and Business Analytics roles where operational domain depth matters.</p>
         </div>
@@ -389,17 +389,16 @@
             <div class="glass-card timeline-card">
               <div class="timeline-header">
                 <div class="timeline-role-block">
-                  <h3 class="timeline-role">Associate Systems Architect Engineer</h3>
+                  <h3 class="timeline-role">Wireless Systems Technician</h3>
                   <span class="timeline-company">T-Mobile</span>
                 </div>
-                <span class="timeline-date">Sep 2025&nbsp;–&nbsp;<span data-i18n="label.present">present</span></span>
+                <span class="timeline-date">Nov 2025&nbsp;–&nbsp;<span data-i18n="label.present">present</span></span>
               </div>
+              <p class="timeline-brief">Internal data &amp; analytics resource within network operations. Build Snowflake SQL and Python workflows across enterprise customer and network datasets — source logic, metric rules, QA checks, and reusable outputs that inform operational strategy. Use ChatGPT, Claude, and Cursor to accelerate SQL/Python scaffolding, refactoring, and documentation; independently validate all outputs against real data and source-system behavior.</p>
               <ul class="timeline-bullets">
-                <li>Build Snowflake SQL and Python workflows across enterprise customer and network datasets; define source logic, metric rules, QA checks, and reusable outputs that inform operational strategy and long-term investment decisions.</li>
-                <li>Analyzed ~90M customer records and narrowed targeting to ~4M high-probability plan-migration candidates using behavioral and usage segmentation, balancing ARPU upside with churn and customer-experience considerations.</li>
-                <li>Partnered with a Senior Data Scientist on an FCC speed-forecasting prototype; profiled site-performance data for completeness, temporal coverage, sampling constraints, and model readiness before recommending next-step data improvements.</li>
-                <li>Use ChatGPT, Claude, and Cursor to accelerate SQL/Python scaffolding, refactoring, debugging, and documentation. I independently validate all outputs against real data and source-system behavior.</li>
-                <li>Designing an aging ticket compliance pipeline in Snowflake to surface 30+ day tickets by owner, status, and bucket with weekly trend tracking, Power BI reporting output, and automated manager alerts when technicians exceed SLA thresholds.</li>
+                <li>Built T-Mobile's first repeatable Nokia outage analytics dataset in Snowflake; scaled from one market to the full region with a PM.</li>
+                <li>Led data-integrity remediation: reconciled 3,425 missing-site and 7,046 compliance records; surfaced 1,013 correction-ready candidates. Maintained 99.90%+ availability as Tier II Diagnostic &amp; Incident Lead.</li>
+                <li>Building an aging-ticket compliance pipeline in Snowflake (30+ day tickets by owner/status/bucket, weekly trends, Power BI output, automated manager SLA alerts).</li>
               </ul>
             </div>
           </div>
@@ -409,11 +408,29 @@
             <div class="glass-card timeline-card">
               <div class="timeline-header">
                 <div class="timeline-role-block">
-                  <h3 class="timeline-role">Network Operations Engineer</h3>
+                  <h3 class="timeline-role">Associate Systems Architect Engineer <span class="timeline-role-qualifier">(Internal Program)</span></h3>
+                  <span class="timeline-company">T-Mobile</span>
+                </div>
+                <span class="timeline-date">Sep 2025&nbsp;–&nbsp;Nov 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Analyzed ~90M customer records in SQL/Python to surface ~4M plan-migration candidates for an ARPU-optimization campaign.</li>
+                <li>Partnered with a Senior Data Scientist on an FCC speed-forecasting prototype; profiled site data for completeness, temporal coverage, and model readiness.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-role-block">
+                  <h3 class="timeline-role">Switch Technician</h3>
                   <span class="timeline-company">T-Mobile</span>
                 </div>
                 <span class="timeline-date">Oct 2021&nbsp;–&nbsp;Sep 2025</span>
               </div>
+              <p class="timeline-brief">Operated in an expanded network-operations capacity — managed ~800 cell sites and coordinated 4 tower crews, with autonomy and ownership well beyond the base role.</p>
               <ul class="timeline-bullets">
                 <li>Built Python and SQL telemetry analytics and metadata validation workflows across 6,000+ cell sites to expose recurring degradation patterns, missing data, compliance gaps, cost variance, and reliability risks.</li>
                 <li>Designed the Cost-Per-Site data model and reporting workflow for crew and material spend; reduced average CPS from ~$180 to ~$150, beating the $160 target and giving leaders site-level outlier visibility.</li>
@@ -472,7 +489,7 @@
 
           <div class="glass-card education-card fade-in">
             <div class="edu-icon" aria-hidden="true">🎓</div>
-            <h3 class="edu-degree">B.S. Computer Science</h3>
+            <h3 class="edu-degree">B.S. Computer Science <span class="edu-concentration">(Software Engineering)</span></h3>
             <p class="edu-school">Colorado Technical University</p>
             <p class="edu-meta">2019–2022 · Cum Laude</p>
           </div>
@@ -508,7 +525,7 @@
         <p class="contact-tagline" data-i18n="contact.tagline">Let's build something worth measuring.</p>
         <p class="location-line">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Detroit, MI &nbsp;·&nbsp; Open to remote, hybrid, or on-site
+          Minneapolis, MN &nbsp;·&nbsp; Open to remote, hybrid, or on-site
         </p>
         <div class="contact-links">
           <a href="https://github.com/cheddaburger" class="contact-btn glass-card" target="_blank" rel="noopener noreferrer">
